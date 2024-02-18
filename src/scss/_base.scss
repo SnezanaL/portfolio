@@ -1,0 +1,68 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #999999;
+}
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: $primary;
+  &:hover {
+    color: #0056b3;
+    //text-decoration: underline;
+  }
+}
+
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: $dark;
+}
+h2,
+.h2 {
+  font-size: 2rem;
+}
+h3,
+.h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+.rounded-lg {
+  border-radius: 0.3rem !important;
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+small,
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+sup {
+  top: -0.1em;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}

@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      content="width=device-width, initial-scale=1.0"
-      name="viewport"
-    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>Portfolio Details</title>
     <meta content="" name="description" />
@@ -17,29 +14,30 @@
       rel="stylesheet"
     />
 
-    <!-- Main CSS File -->
+    <!-- Vendor CSS Files -->
+    <link href="/src/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="/src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link
+      href="/src/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
-      href="/src/styles/main.css"
     />
+    <link href="/src/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="/src/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="/src/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
 
   <body>
     <main id="main">
       <!-- ======= Portfolio Details Section ======= -->
-      <section
-        id="portfolio-details"
-        class="portfolio-details"
-      >
+      <section id="portfolio-details" class="portfolio-details">
         <div class="container">
           <div class="row gy-4">
             <div class="col-lg-8">
               <!-- Carousel -->
-              <div
-                id="demo"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
+              <div id="demo" class="carousel slide" data-bs-ride="carousel">
                 <!-- Indicators/dots -->
                 <div class="carousel-indicators">
                   <button
@@ -62,9 +60,7 @@
 
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
-                  <div
-                    class="carousel-item active"
-                  >
+                  <div class="carousel-item active">
                     <img
                       src="/src/images/projects/Reports/Reports-1.png"
                       alt="Los Angeles"
@@ -122,9 +118,7 @@
                   data-bs-target="#demo"
                   data-bs-slide="prev"
                 >
-                  <span
-                    class="carousel-control-prev-icon"
-                  ></span>
+                  <span class="carousel-control-prev-icon"></span>
                 </button>
                 <button
                   class="carousel-control-next"
@@ -132,9 +126,7 @@
                   data-bs-target="#demo"
                   data-bs-slide="next"
                 >
-                  <span
-                    class="carousel-control-next-icon"
-                  ></span>
+                  <span class="carousel-control-next-icon"></span>
                 </button>
               </div>
             </div>
@@ -143,17 +135,12 @@
               <div class="portfolio-info">
                 <h3>Project information</h3>
                 <ul>
+                  <li><strong>Category</strong>: Web Development</li>
+                  <li><strong>Client</strong>: HeathCare Central Co.</li>
+                  <li><strong>Project date</strong>: 01 March, 2022</li>
                   <li>
-                    <strong>Category</strong>: Web
-                    Development
-                  </li>
-                  <li>
-                    <strong>Client</strong>:
-                    HeathCare Central Co.
-                  </li>
-                  <li>
-                    <strong>Project date</strong>:
-                    01 March, 2022
+                    <strong>Technologies Used:</strong>: HTML, CSS, Vanilla
+                    JavaScript
                   </li>
                   <li>
                     <strong>Project URL</strong>:
@@ -167,17 +154,17 @@
               <div class="portfolio-description">
                 <h2>Project details</h2>
                 <p>
-                  Autem ipsum nam porro corporis
-                  rerum. Quis eos dolorem eos
-                  itaque inventore commodi labore
-                  quia quia. Exercitationem
-                  repudiandae officiis neque
-                  suscipit non officia eaque
-                  itaque enim. Voluptatem officia
-                  accusantium nesciunt est omnis
-                  tempora consectetur dignissimos.
-                  Sequi nulla at esse enim cum
-                  deserunt eius.
+                  Design and development of medical reports sent from the
+                  application.
+                </p>
+                <p>
+                  Creating and coding medical reports generated within the
+                  application. I worked on HTML, CSS, and JavaScript code to
+                  display results obtained as JSON from a REST server. These
+                  reports, showcasing various aspects of the application, were
+                  then sent to clients upon request. I was involved in designing
+                  a body map for monitoring injections and creating graphical
+                  charts to depict medication usage.
                 </p>
               </div>
             </div>
@@ -195,16 +182,17 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      type="text/javascript"
-      src="/src/js/main.js"
-    ></script> -->
+    <!-- Vendor JS Files -->
+    <script src="/src/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/src/vendor/aos/aos.js"></script>
+    <script src="/src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/src/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/src/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/src/vendor/typed.js/typed.umd.js"></script>
+    <script src="/src/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="/src/vendor/php-email-form/validate.js"></script>
+
+    <script defer type="text/javascript" src="/src/js/main.js"></script>
   </body>
 </html>

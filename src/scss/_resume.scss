@@ -1,0 +1,186 @@
+/*--------------------------------------------------------------
+  # Resume Section
+  --------------------------------------------------------------*/
+
+.resume-section {
+  padding: 7em 0;
+  position: relative;
+  display: block;
+
+  #navi {
+    top: 180px;
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 0;
+    margin-left: 60px;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      font-weight: 700;
+      list-style: none;
+      margin-bottom: 10px;
+      a {
+        color: #000000;
+      }
+      a.active {
+        background: $primary;
+      }
+      a.current {
+        color: $primary;
+        margin-left: 20px;
+        position: relative;
+        &:after {
+          position: absolute;
+          top: 50%;
+          left: -24px;
+          width: 20px;
+          height: 2px;
+          content: "";
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background: $secondary;
+        }
+      }
+    }
+  }
+  .flaticon-ideas:before {
+    content: "\f100";
+  }
+  .page {
+    width: 100%;
+    margin-bottom: 7em;
+    .heading {
+      font-weight: 800;
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: $primary;
+    }
+
+    .resume-wrap {
+      width: 100%;
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 10px;
+      margin-right: 16px;
+      .icon {
+        width: 50px;
+        height: 50px;
+        background: $primary;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        margin-right: 16px;
+        iconify-icon {
+          font-size: 30px;
+          padding: 15px;
+          color: #fff;
+        }
+      }
+      .date {
+        font-weight: 700;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6);
+        color: $secondary;
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 6px;
+      }
+      .position {
+        font-size: 18px;
+        font-weight: 700;
+        color: $dark;
+        display: block;
+        margin-bottom: 3px;
+      }
+    }
+    .h2,
+    .h5 {
+      line-height: 1.5;
+      color: black;
+      font-weight: 700 !important;
+    }
+  }
+  .meta-img {
+    width: 90px;
+    position: relative;
+    top: -3.3px;
+  }
+  .progress-wrap {
+    h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+  }
+  .progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    margin-bottom: 16px;
+  }
+  .progress {
+    //height: 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #e6e6e6;
+  }
+}
+
+.circular-progress {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(150px - 10px);
+  height: calc(150px - 10px);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.percentage {
+  position: relative;
+  font-size: 2rem;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --progress-bar-width: 150px;
+    --progress-bar-height: 150px;
+    --font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --progress-bar-width: 120px;
+    --progress-bar-height: 120px;
+    --font-size: 1rem;
+  }
+}
+@keyframes progress {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
