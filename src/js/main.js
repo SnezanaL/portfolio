@@ -1,6 +1,7 @@
-(function () {
-  console.log("hi");
+import "../../node_modules/glightbox/dist/js/glightbox.js";
+import "./ron.js";
 
+(function () {
   ("use strict");
 
   /**
@@ -92,7 +93,7 @@
   let resumelinks = select("#navbar .scrollto", true);
   const resumelinksActive = () => {
     let position = window.scrollY + 200;
-    resumelinks.forEach((navbarlink) => {
+    resumelinks.forEach((resumelink) => {
       if (!resumelink.hash) return;
       let section = select(resumelink.hash);
       if (!section) return;
@@ -228,6 +229,7 @@
   const portfolioLightbox = GLightbox({
     selector: ".portfolio-lightbox",
   });
+  console.log(portfolioLightbox);
 
   /**
    * Initiate portfolio details lightbox
@@ -237,6 +239,7 @@
     width: "90%",
     height: "90vh",
   });
+  console.log(portfolioDetailsLightbox);
 
   /**
    * Portfolio details slider

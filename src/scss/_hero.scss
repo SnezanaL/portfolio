@@ -5,8 +5,8 @@
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../images/woman-sitting-mountain-top.jpg")
-    top right no-repeat;
+  background: url("../images/woman-sitting-mountain-top.jpg") top right
+    no-repeat;
   background-size: cover;
   background-position: 63% 63%;
   position: relative;
@@ -31,7 +31,7 @@
   .slider-text h2 {
     font-weight: 800;
   }
-  p {
+  .sub-title {
     font-weight: 800;
     color: black;
     margin: 15px 0 0 0;

@@ -7,6 +7,9 @@
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+@import "../../node_modules/glightbox/dist/css/glightbox.css";
+@import "../../node_modules/aos/dist/aos.css";
+@import "./../styles/animate.css";
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -290,7 +293,7 @@ sup {
 #hero .slider-text h2, #hero .slider-text .h2 {
   font-weight: 800;
 }
-#hero p {
+#hero .sub-title {
   font-weight: 800;
   color: black;
   margin: 15px 0 0 0;
@@ -298,7 +301,7 @@ sup {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
-#hero p span {
+#hero .sub-title span {
   color: #520dc2;
   letter-spacing: 1px;
 }
@@ -354,6 +357,10 @@ sup {
 /*--------------------------------------------------------------
   # About Section
   --------------------------------------------------------------*/
+#about {
+  background: #ffffff;
+}
+
 .img-about {
   width: 100%;
   z-index: 0;
@@ -598,6 +605,11 @@ sup {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+section#portfolio {
+  background: #ffffff;
+  padding-top: 50px;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -12137,23 +12149,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-  # Hero Section
-  --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-  # About Section
-  --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-  # Resume Section
-  --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
+:root {
+  --bs-btn-border-radius: 40px;
+}
+
+.ftco-animate {
+  opacity: 0;
+  visibility: hidden;
+}
 
 /*# sourceMappingURL=main.css.map */

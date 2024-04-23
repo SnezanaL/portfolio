@@ -9,7 +9,6 @@
     "sass-dev": "sass --watch --update --style=expanded src/scss:src/css",
     "sass-prod": "sass --no-source-map --style=compressed src/scss:src/css",
     "start": "npm-run-all --parallel live-server compile-sass"
-
   },
   "keywords": [],
   "author": "",
@@ -24,7 +23,9 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.2",
+    "glightbox": "^3.2.0",
     "live-server": "^1.1.0"
   }
 }
