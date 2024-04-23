@@ -121,9 +121,7 @@ AOS.init({
     }
   );
 
-  $("#dropdown04").on("show.bs.dropdown", function () {
-    console.log("show");
-  });
+  $("#dropdown04").on("show.bs.dropdown", function () {});
 
   // scroll
   var scrollWindow = function () {
@@ -177,7 +175,7 @@ AOS.init({
           $(".number").each(function () {
             var $this = $(this),
               num = $this.data("number");
-            console.log(num);
+
             $this.animateNumber(
               {
                 number: num,

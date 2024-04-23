@@ -229,7 +229,6 @@ import "./ron.js";
   const portfolioLightbox = GLightbox({
     selector: ".portfolio-lightbox",
   });
-  console.log(portfolioLightbox);
 
   /**
    * Initiate portfolio details lightbox
@@ -239,7 +238,6 @@ import "./ron.js";
     width: "90%",
     height: "90vh",
   });
-  console.log(portfolioDetailsLightbox);
 
   /**
    * Portfolio details slider
