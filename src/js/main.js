@@ -1,4 +1,4 @@
-import "../../node_modules/glightbox/dist/js/glightbox.js";
+import "../vendor/glightbox/js/glightbox.min.js";
 import "./ron.js";
 
 (function () {
